@@ -3,29 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DK CLASSES Result</title>
+  <title>DK CLASSES Result Portal</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>DK CLASSES Result</h1>
+    <h1>DK CLASSES Result Portal</h1>
   </header>
 
-  <main>
-    <div class="main-container">
-      <label for="classSelect">Select Class:</label>
-      <select id="classSelect">
-        <option value="">--Select Class--</option>
-      </select>
+  <section class="controls">
+    <label for="classSelect">Select Class:</label>
+    <select id="classSelect">
+      <option value="">--Select Class--</option>
+    </select>
 
-      <label for="examSelect">Select Exam:</label>
-      <select id="examSelect">
-        <option value="">--Select Exam--</option>
-      </select>
+    <label for="examSelect">Select Exam:</label>
+    <select id="examSelect">
+      <option value="">--Select Exam--</option>
+    </select>
 
-      <div id="resultsContainer"></div>
-    </div>
-  </main>
+    <input type="text" id="searchInput" placeholder="Search by Roll No or Name">
+    <button id="searchButton">Search</button>
+  </section>
+
+  <section id="resultsContainer"></section>
 
   <script src="script.js"></script>
 </body>
