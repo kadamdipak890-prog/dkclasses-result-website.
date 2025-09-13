@@ -1,58 +1,49 @@
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #f9f9f9;
-}
-
-header {
-  background: #4CAF50;
-  color: white;
-  padding: 20px;
   text-align: center;
+  margin: 20px;
+  background: #f4f6f9;
 }
 
-.controls {
-  padding: 20px;
-  text-align: center;
+h1 {
+  color: #2c3e50;
 }
 
-.controls select, .controls input {
-  padding: 5px 10px;
-  margin: 0 10px;
+.search-box {
+  margin: 20px;
 }
 
-.controls button {
-  padding: 5px 15px;
-  cursor: pointer;
-  background: #4CAF50;
+input {
+  padding: 8px;
+  width: 200px;
+}
+
+button {
+  padding: 8px 12px;
+  background: #3498db;
   color: white;
   border: none;
-  border-radius: 4px;
+  cursor: pointer;
 }
 
-.exam-section {
-  margin: 20px;
-  overflow-x: auto;
-}
-
-.exam-header {
-  font-weight: bold;
-  margin-bottom: 10px;
+button:hover {
+  background: #2980b9;
 }
 
 table {
-  width: 100%;
+  margin: 20px auto;
   border-collapse: collapse;
+  width: 80%;
   background: white;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.2);
 }
 
 th, td {
+  padding: 10px;
   border: 1px solid #ddd;
-  padding: 8px;
-  text-align: center;
 }
 
 th {
-  background: #f2f2f2;
+  background: #3498db;
+  color: white;
 }
