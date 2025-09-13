@@ -1,4 +1,4 @@
-// Sample data (you can replace with CSV import)
+// Student data
 const students = [
   { roll: 101, name: "Sakshi Kadam", class: "9", marks: 20 },
   { roll: 102, name: "Dipak Kadam", class: "9", marks: 30 },
@@ -10,27 +10,38 @@ const students = [
 
 // Calculate percentage and rank
 students.forEach(s => {
-  s.percentage = ((s.marks / 50) * 100).toFixed(2) + "%"; // Assuming total = 50
+  s.percentage = ((s.marks / 50) * 100).toFixed(2) + "%"; // total = 50
 });
-
 students.sort((a, b) => b.marks - a.marks);
 students.forEach((s, i) => s.rank = i + 1);
 
-// Show table
-const tbody = document.querySelector("#resultTable tbody");
-students.forEach(s => {
-  const row = `<tr>
-    <td>${s.roll}</td>
-    <td>${s.name}</td>
-    <td>${s.class}</td>
-    <td>${s.marks}</td>
-    <td>${s.percentage}</td>
-    <td>${s.rank}</td>
-  </tr>`;
-  tbody.innerHTML += row;
-});
+// Functions for buttons
+function showSearch() {
+  document.getElementById("searchBox").style.display = "block";
+  document.getElementById("allStudents").style.display = "none";
+  document.getElementById("result").innerHTML = "";
+}
 
-// Search function
+function showAll() {
+  document.getElementById("searchBox").style.display = "none";
+  document.getElementById("allStudents").style.display = "block";
+  document.getElementById("result").innerHTML = "";
+
+  const tbody = document.querySelector("#resultTable tbody");
+  tbody.innerHTML = "";
+  students.forEach(s => {
+    const row = `<tr>
+      <td>${s.roll}</td>
+      <td>${s.name}</td>
+      <td>${s.class}</td>
+      <td>${s.marks}</td>
+      <td>${s.percentage}</td>
+      <td>${s.rank}</td>
+    </tr>`;
+    tbody.innerHTML += row;
+  });
+}
+
 function searchResult() {
   const rollNo = document.getElementById("searchRoll").value;
   const student = students.find(s => s.roll == rollNo);
