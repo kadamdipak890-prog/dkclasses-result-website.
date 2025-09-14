@@ -1,293 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="mr">
 <head>
   <meta charset="UTF-8">
-  <title>Yashodeep Classes – Physics Test</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 20px; background: #f8f9fa; }
-    h1 { text-align: center; color: #2c3e50; }
-    .container { max-width: 800px; margin: auto; background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-    .question { margin-bottom: 15px; padding: 10px; border: 1px solid #ddd; border-radius: 8px; background: #fefefe; }
-    .options label { display: block; margin: 5px 0; }
-    button { padding: 10px 20px; margin-top: 15px; font-size: 16px; border: none; border-radius: 5px; cursor: pointer; background: #3498db; color: #fff; }
-    button:hover { background: #2980b9; }
-    #result { font-weight: bold; margin-top: 20px; }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DK Classes Online Result Portal</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Yashodeep Classes – Physics Test</h1>
-  <div class="container">
-    <label>Student Name: <input type="text" id="studentName"></label><br><br>
-    <label>Class: <input type="text" id="studentClass"></label><br><br>
-    
-    <form id="quizForm">
-      <!-- Rotational Dynamics -->
-      <div class="question">
-        <p>1. The moment of inertia depends on:</p>
-        <div class="options">
-          <label><input type="radio" name="q1" value="a"> Mass only</label>
-          <label><input type="radio" name="q1" value="b"> Axis of rotation only</label>
-          <label><input type="radio" name="q1" value="c"> Distribution of mass and axis of rotation</label>
-          <label><input type="radio" name="q1" value="d"> Shape only</label>
-        </div>
-      </div>
+  <h1>📘 DK Classes Online Result Portal</h1>
 
-      <div class="question">
-        <p>2. The unit of torque is:</p>
-        <div class="options">
-          <label><input type="radio" name="q2" value="a"> N</label>
-          <label><input type="radio" name="q2" value="b"> N·m</label>
-          <label><input type="radio" name="q2" value="c"> J</label>
-          <label><input type="radio" name="q2" value="d"> kg·m/s</label>
-        </div>
-      </div>
-
-      <div class="question">
-        <p>3. Rotational analogue of force is:</p>
-        <div class="options">
-          <label><input type="radio" name="q3" value="a"> Power</label>
-          <label><input type="radio" name="q3" value="b"> Torque</label>
-          <label><input type="radio" name="q3" value="c"> Momentum</label>
-          <label><input type="radio" name="q3" value="d"> Work</label>
-        </div>
-      </div>
-
-      <div class="question">
-        <p>4. Angular momentum is conserved when:</p>
-        <div class="options">
-          <label><input type="radio" name="q4" value="a"> Torque is zero</label>
-          <label><input type="radio" name="q4" value="b"> Force is zero</label>
-          <label><input type="radio" name="q4" value="c"> Velocity is constant</label>
-          <label><input type="radio" name="q4" value="d"> Mass is constant</label>
-        </div>
-      </div>
-
-      <div class="question">
-        <p>5. The SI unit of angular momentum is:</p>
-        <div class="options">
-          <label><input type="radio" name="q5" value="a"> J·s</label>
-          <label><input type="radio" name="q5" value="b"> N·m</label>
-          <label><input type="radio" name="q5" value="c"> kg·m²/s</label>
-          <label><input type="radio" name="q5" value="d"> N·s</label>
-        </div>
-      </div>
-
-      <div class="question">
-        <p>6. Parallel axis theorem is used to calculate:</p>
-        <div class="options">
-          <label><input type="radio" name="q6" value="a"> Force</label>
-          <label><input type="radio" name="q6" value="b"> Energy</label>
-          <label><input type="radio" name="q6" value="c"> Moment of inertia</label>
-          <label><input type="radio" name="q6" value="d"> Power</label>
-        </div>
-      </div>
-
-      <div class="question">
-        <p>7. Rotational kinetic energy is given by:</p>
-        <div class="options">
-          <label><input type="radio" name="q7" value="a"> ½ Iω²</label>
-          <label><input type="radio" name="q7" value="b"> Iω</label>
-          <label><input type="radio" name="q7" value="c"> ½ mv²</label>
-          <label><input type="radio" name="q7" value="d"> mgh</label>
-        </div>
-      </div>
-
-      <div class="question">
-        <p>8. Radius of gyration depends on:</p>
-        <div class="options">
-          <label><input type="radio" name="q8" value="a"> Mass only</label>
-          <label><input type="radio" name="q8" value="b"> Shape and axis of rotation</label>
-          <label><input type="radio" name="q8" value="c"> Force applied</label>
-          <label><input type="radio" name="q8" value="d"> Time</label>
-        </div>
-      </div>
-
-      <!-- Mechanical Properties of Fluids -->
-      <div class="question">
-        <p>9. Pressure in a fluid at rest depends on:</p>
-        <div class="options">
-          <label><input type="radio" name="q9" value="a"> Depth only</label>
-          <label><input type="radio" name="q9" value="b"> Shape of container</label>
-          <label><input type="radio" name="q9" value="c"> Both depth and density</label>
-          <label><input type="radio" name="q9" value="d"> Volume only</label>
-        </div>
-      </div>
-
-      <div class="question">
-        <p>10. The SI unit of pressure is:</p>
-        <div class="options">
-          <label><input type="radio" name="q10" value="a"> N</label>
-          <label><input type="radio" name="q10" value="b"> Pa</label>
-          <label><input type="radio" name="q10" value="c"> J</label>
-          <label><input type="radio" name="q10" value="d"> atm</label>
-        </div>
-      </div>
-
-      <div class="question">
-        <p>11. Pascal’s law is applicable to:</p>
-        <div class="options">
-          <label><input type="radio" name="q11" value="a"> Solids only</label>
-          <label><input type="radio" name="q11" value="b"> Gases only</label>
-          <label><input type="radio" name="q11" value="c"> Fluids</label>
-          <label><input type="radio" name="q11" value="d"> None</label>
-        </div>
-      </div>
-
-      <div class="question">
-        <p>12. The upward force acting on a body immersed in fluid is called:</p>
-        <div class="options">
-          <label><input type="radio" name="q12" value="a"> Pressure</label>
-          <label><input type="radio" name="q12" value="b"> Buoyant force</label>
-          <label><input type="radio" name="q12" value="c"> Viscous force</label>
-          <label><input type="radio" name="q12" value="d"> Lift</label>
-        </div>
-      </div>
-
-      <div class="question">
-        <p>13. Bernoulli’s principle is based on:</p>
-        <div class="options">
-          <label><input type="radio" name="q13" value="a"> Conservation of energy</label>
-          <label><input type="radio" name="q13" value="b"> Conservation of momentum</label>
-          <label><input type="radio" name="q13" value="c"> Conservation of mass</label>
-          <label><input type="radio" name="q13" value="d"> Newton’s laws</label>
-        </div>
-      </div>
-
-      <div class="question">
-        <p>14. The viscosity of an ideal fluid is:</p>
-        <div class="options">
-          <label><input type="radio" name="q14" value="a"> Zero</label>
-          <label><input type="radio" name="q14" value="b"> One</label>
-          <label><input type="radio" name="q14" value="c"> Infinity</label>
-          <label><input type="radio" name="q14" value="d"> Constant</label>
-        </div>
-      </div>
-
-      <div class="question">
-        <p>15. Surface tension is due to:</p>
-        <div class="options">
-          <label><input type="radio" name="q15" value="a"> Gravitational force</label>
-          <label><input type="radio" name="q15" value="b"> Cohesive force</label>
-          <label><input type="radio" name="q15" value="c"> Adhesive force</label>
-          <label><input type="radio" name="q15" value="d"> Buoyant force</label>
-        </div>
-      </div>
-
-      <div class="question">
-        <p>16. The unit of surface tension is:</p>
-        <div class="options">
-          <label><input type="radio" name="q16" value="a"> N/m</label>
-          <label><input type="radio" name="q16" value="b"> N/m²</label>
-          <label><input type="radio" name="q16" value="c"> Pa</label>
-          <label><input type="radio" name="q16" value="d"> J</label>
-        </div>
-      </div>
-
-      <!-- Kinetic Theory of Gases -->
-      <div class="question">
-        <p>17. Pressure of a gas is due to:</p>
-        <div class="options">
-          <label><input type="radio" name="q17" value="a"> Attraction between molecules</label>
-          <label><input type="radio" name="q17" value="b"> Collisions of molecules with container walls</label>
-          <label><input type="radio" name="q17" value="c"> Weight of molecules</label>
-          <label><input type="radio" name="q17" value="d"> Random motion</label>
-        </div>
-      </div>
-
-      <div class="question">
-        <p>18. The average kinetic energy of a gas molecule is proportional to:</p>
-        <div class="options">
-          <label><input type="radio" name="q18" value="a"> Pressure</label>
-          <label><input type="radio" name="q18" value="b"> Volume</label>
-          <label><input type="radio" name="q18" value="c"> Temperature</label>
-          <label><input type="radio" name="q18" value="d"> Mass</label>
-        </div>
-      </div>
-
-      <div class="question">
-        <p>19. The value of universal gas constant R is:</p>
-        <div class="options">
-          <label><input type="radio" name="q19" value="a"> 8.31 J/mol·K</label>
-          <label><input type="radio" name="q19" value="b"> 0.0821 L·atm/mol·K</label>
-          <label><input type="radio" name="q19" value="c"> Both a and b</label>
-          <label><input type="radio" name="q19" value="d"> 1 J/mol·K</label>
-        </div>
-      </div>
-
-      <div class="question">
-        <p>20. Root mean square speed of gas molecules is proportional to:</p>
-        <div class="options">
-          <label><input type="radio" name="q20" value="a"> √T</label>
-          <label><input type="radio" name="q20" value="b"> T</label>
-          <label><input type="radio" name="q20" value="c"> 1/T</label>
-          <label><input type="radio" name="q20" value="d"> 1/√T</label>
-        </div>
-      </div>
-
-      <div class="question">
-        <p>21. Which law states that energy is equally distributed among all degrees of freedom?</p>
-        <div class="options">
-          <label><input type="radio" name="q21" value="a"> Boyle’s law</label>
-          <label><input type="radio" name="q21" value="b"> Equipartition law of energy</label>
-          <label><input type="radio" name="q21" value="c"> Charles’ law</label>
-          <label><input type="radio" name="q21" value="d"> Avogadro’s law</label>
-        </div>
-      </div>
-
-      <div class="question">
-        <p>22. Avogadro’s number is approximately:</p>
-        <div class="options">
-          <label><input type="radio" name="q22" value="a"> 3.02 × 10²³</label>
-          <label><input type="radio" name="q22" value="b"> 6.02 × 10²³</label>
-          <label><input type="radio" name="q22" value="c"> 9.02 × 10²³</label>
-          <label><input type="radio" name="q22" value="d"> 1.02 × 10²³</label>
-        </div>
-      </div>
-
-      <div class="question">
-        <p>23. The unit of Boltzmann constant is:</p>
-        <div class="options">
-          <label><input type="radio" name="q23" value="a"> J/K</label>
-          <label><input type="radio" name="q23" value="b"> J/mol</label>
-          <label><input type="radio" name="q23" value="c"> N/m</label>
-          <label><input type="radio" name="q23" value="d"> Pa</label>
-        </div>
-      </div>
-
-      <div class="question">
-        <p>24. Specific heat ratio (γ) for a monoatomic gas is:</p>
-        <div class="options">
-          <label><input type="radio" name="q24" value="a"> 5/3</label>
-          <label><input type="radio" name="q24" value="b"> 7/5</label>
-          <label><input type="radio" name="q24" value="c"> 3/2</label>
-          <label><input type="radio" name="q24" value="d"> 1</label>
-        </div>
-      </div>
-
-      <div class="question">
-        <p>25. The mean free path of gas molecules increases with:</p>
-        <div class="options">
-          <label><input type="radio" name="q25" value="a"> Increase in pressure</label>
-          <label><input type="radio" name="q25" value="b"> Decrease in pressure</label>
-          <label><input type="radio" name="q25" value="c"> Increase in density</label>
-          <label><input type="radio" name="q25" value="d"> None</label>
-        </div>
-      </div>
-
-      <button type="button" onclick="submitQuiz()">Submit Test</button>
-    </form>
-    <p id="result"></p>
+  <div>
+    <label>वर्ग निवडा:</label>
+    <select id="classSelect" onchange="enableDivision()">
+      <option value="">--निवडा--</option>
+      <option value="9">9 वी</option>
+      <option value="10">10 वी</option>
+    </select>
   </div>
 
-<script>
-const answers = {
-  q1:"c", q2:"b", q3:"b", q4:"a", q5:"c", q6:"c", q7:"a", q8:"b",
-  q9:"c", q10:"b", q11:"c", q12:"b", q13:"a", q14:"a", q15:"b", q16:"a",
-  q17:"b", q18:"c", q19:"c", q20:"a", q21:"b", q22:"b", q23:"a", q24:"a", q25:"b"
-};
+  <div>
+    <label>तुकडी निवडा:</label>
+    <select id="divisionSelect" onchange="enableOption()" disabled>
+      <option value="">--निवडा--</option>
+      <option value="अ">अ</option>
+      <option value="ब">ब</option>
+    </select>
+  </div>
 
-function submitQuiz(){
-  let score=0;
-  for(let q in answers){
-    let selected=document.querySelector(`input[name="${q}"]:checked`);
-    if(selected && selected.value===answers[q]) score
+  <div>
+    <label>निकाल प्रकार:</label>
+    <select id="resultType" onchange="showInput()" disabled>
+      <option value="">--निवडा--</option>
+      <option value="self">स्वतःचा निकाल</option>
+      <option value="all">सर्व विद्यार्थ्यांचा निकाल</option>
+    </select>
+  </div>
+
+  <div id="rollInput" style="display:none;">
+    <label>रोल नंबर टाका:</label>
+    <input type="number" id="rollNumber">
+    <button onclick="showResult()">निकाल बघा</button>
+  </div>
+
+  <div id="result"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
